@@ -1,0 +1,6 @@
+# Se permite rastrear todo el sitio público (páginas, CSS, JS e imágenes).
+User-agent: *
+Allow: /
+
+# IMPORTANTE: reemplazá por tu dominio real (o corré scripts/generate-sitemap.js, que lo actualiza solo)
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml

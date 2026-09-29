@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PokéTools: Pokédex, movimientos, tipos, equipos y juegos Pokémon</title>
+<meta name="description" content="Pokédex con stats y evoluciones, buscador de movimientos, tabla de tipos, comparador, generador y analizador de equipos y 8 minijuegos Pokémon. Datos de PokéAPI.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:site_name" content="PokéTools">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PokéTools: Pokédex, movimientos, tipos, equipos y juegos Pokémon">
+<meta property="og:description" content="Pokédex, movimientos, tipos, comparador, equipos y minijuegos Pokémon.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<!-- Aplica el tema antes de pintar para evitar el parpadeo claro/oscuro -->
+<script>(function(){try{var t=localStorage.getItem('pt_theme');t=t?JSON.parse(t):null;if(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='dark';document.documentElement.setAttribute('data-theme',t||'light');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip-link" href="#view">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="PokéTools, inicio">
+      <img class="brand-mark" src="/favicon.svg" alt="" width="30" height="30">
+      <span>PokéTools</span>
+    </a>
+
+    <form id="global-search-form" class="header-search" role="search">
+      <input id="global-search-input" type="search" class="input" placeholder="Buscar Pokémon o movimiento…" aria-label="Buscar Pokémon o movimiento" autocomplete="off">
+      <button type="submit" class="btn btn-small">Buscar</button>
+    </form>
+
+    <nav class="main-nav" aria-label="Principal">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false">☰</button>
+      <div id="nav-links" class="nav-links">
+        <a class="nav-link" data-section="/" href="/">Inicio</a>
+        <a class="nav-link" data-section="/pokedex" href="/pokedex">Pokédex</a>
+        <a class="nav-link" data-section="/moves" href="/moves">Movimientos</a>
+        <a class="nav-link" data-section="/types" href="/types">Tipos</a>
+        <a class="nav-link" data-section="/comparison" href="/comparison">Comparador</a>
+        <a class="nav-link" data-section="/teams" href="/teams">Equipos</a>
+        <a class="nav-link" data-section="/tools" href="/tools">Herramientas</a>
+        <a class="nav-link" data-section="/games" href="/games">Juegos</a>
+        <a class="nav-link" data-section="/favorites" href="/favorites" aria-label="Favoritos">⭐<span class="nav-fav-text"> Favoritos</span></a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="view" class="view" tabindex="-1">
+  <noscript><p>PokéTools necesita JavaScript para mostrar los datos de la Pokédex.</p></noscript>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <nav class="footer-links" aria-label="Secciones">
+      <a href="/pokedex">Pokédex</a>
+      <a href="/moves">Movimientos</a>
+      <a href="/types">Tipos</a>
+      <a href="/comparison">Comparador</a>
+      <a href="/teams">Generador de equipos</a>
+      <a href="/teams/analyzer">Analizador de equipos</a>
+      <a href="/tools">Herramientas</a>
+      <a href="/games">Juegos</a>
+    </nav>
+    <p>PokéTools es un proyecto de fans, sin fines comerciales ni afiliación con Nintendo, Game Freak o The Pokémon Company. Datos e imágenes vía <a href="https://pokeapi.co" target="_blank" rel="noopener">PokéAPI</a>. Pokémon y los nombres de personajes son marcas registradas de sus respectivos dueños.</p>
+  </div>
+</footer>
+
+<script src="/js/config.js"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/storage.js"></script>
+<script src="/js/seo.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/components.js"></script>
+<script src="/js/router.js"></script>
+<script src="/js/pokedex.js"></script>
+<script src="/js/moves.js"></script>
+<script src="/js/types.js"></script>
+<script src="/js/comparison.js"></script>
+<script src="/js/teams.js"></script>
+<script src="/js/tools.js"></script>
+<script src="/js/games.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
