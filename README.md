@@ -75,8 +75,6 @@ PokeTools/
 
 ## Proyecto
 
-Proyecto personal desarrollado para practicar desarrollo web, consumo de APIs, interfaces interactivas y creación de herramientas y juegos con JavaScript.
-
 ---
 
 PokéTools es un proyecto de fans, sin fines comerciales ni afiliación con Nintendo, Game Freak o The Pokémon Company.
